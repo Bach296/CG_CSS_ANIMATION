@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cha {
+            display: flex;
+            margin: 200px;
+        }
+        .cha div {
+            margin: 10px;
+            width: 30px;
+            height: 50px;
+        }
+        .con1 {
+            animation-name: vidu;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.3s;
+            transition: transform 2s;
+        }
+        @keyframes vidu {
+            0% {
+                transform: scaleY(1);
+            }
+            100%{
+                transform: scaleY(-1);
+            }
+        }
+        .con2 {
+            animation-name: vidu;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.5s;
+        
+        }
+        .con3 {
+            animation-name: vidu;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.8s;
+            
+        }
+        .con4 {
+            animation-name: vidu;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="cha">
+        <div class="con1" style="background-color: red;"></div>
+        <div class="con2" style="background-color: yellow;"></div>
+        <div class="con3" style="background-color: black;"></div>
+        <div class="con4" style="background-color: chocolate;"></div>
+    </div>
+</body>
+</html>
